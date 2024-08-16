@@ -1,0 +1,10 @@
+.btn {
+  color: var(--theme-color);
+  padding: 0.7rem 1.2rem;
+  border: 1px solid var(--theme-color);
+  border-radius: 5px;
+  font-size: var(--tsm);
+  &:hover {
+    background: var(--lightest-navy);
+  }
+}
