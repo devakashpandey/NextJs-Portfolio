@@ -6,19 +6,22 @@ function Logo() {
     <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
       <title>Logo</title>
       <g>
-        <g id="A" transform="translate(37.000000, 35.000000)">
-          <svg width="500" height="500">
+        <g id="A" transform="translate(34.000000, 32.000000) scale(1.3)">
+          <svg width="800px" height="800px">
             {" "}
             <path
-              fill="#1abc9c"
+              fill="#32e6bc"
               d="M12 2L3 22h6l1-4h4l1 4h6L12 2zM10.25 16l1.75-7l1.75 7h-3.5z"
-              width="500"
-              height="500"
+              width="800px"
+              height="800px"
             />
+            {/* <text x="50" y="50" font-family="Arial" font-size="40" fill="#000">
+              A
+            </text> */}
           </svg>
         </g>
         <path
-          stroke="#1abc9c"
+          stroke="#32e6bc"
           strokeWidth="5"
           strokeLinecap="round"
           strokeLinejoin="round"

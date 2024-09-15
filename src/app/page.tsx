@@ -1,4 +1,6 @@
 "use client";
+import Email from "@/components/Email";
+import { SocialIcons } from "@/components/SocialIcons";
 import "@/scss/index.scss";
 import { Raleway, Fira_Code } from "next/font/google";
 
@@ -17,6 +19,8 @@ export default function Home() {
           --fira-code: ${firacode.style.fontFamily};
         }
       `}</style>
+      <SocialIcons />
+      <Email />
     </>
   );
 }

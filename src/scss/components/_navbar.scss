@@ -32,10 +32,10 @@ nav {
     .nav-items {
       display: flex;
       align-items: center;
-      gap: 3rem;
+      gap: 2rem;
       .nav-item-ul {
         display: flex;
-        gap: 3rem;
+        gap: 1.5rem;
         color: var(--lightest-slate);
         counter-reset: nav-list;
         font-family: var(--fira-code);
@@ -52,6 +52,13 @@ nav {
           &:hover {
             color: var(--theme-color);
           }
+        }
+      }
+
+      .nav-button {
+        transition: all 0.25s ease-in-out;
+        &:hover {
+          transform: translate(0.4rem);
         }
       }
     }

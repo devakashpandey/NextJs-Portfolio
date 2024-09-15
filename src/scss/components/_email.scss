@@ -1,0 +1,27 @@
+.email {
+  position: fixed;
+  bottom: 0;
+  right: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  & > a {
+    writing-mode: vertical-rl;
+    color: var(--light-slate);
+    font-family: var(--fira-code);
+    font-size: var(--tsm1);
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--theme-color);
+    }
+  }
+  &::after {
+    content: "";
+    display: block;
+    height: 95px;
+    width: 1.5px;
+    background: var(--lightest-slate);
+    margin: 0 auto;
+  }
+}

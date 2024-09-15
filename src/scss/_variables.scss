@@ -7,12 +7,7 @@
   --slate: #8892b0;
   --light-slate: #ccd6f6;
   --lightest-slate: #a8b2d1;
-  // --theme-color: #9d00ff;
-  --theme-color: #1abc9c;
-
-  // #8e44ad
-  // #1abc9c
-  // #0ab0d7
+  --theme-color: #32e6bc;
 
   --tsm: 13px;
   --tsm1: 14px;
@@ -23,6 +18,7 @@
   --txlarge: 25px;
   --tx2large: 32px;
   --tgiant: clamp(40px, 8vw, 80px);
+
   @media screen and (max-width: 480px) {
     --tx2large: 25px;
   }
