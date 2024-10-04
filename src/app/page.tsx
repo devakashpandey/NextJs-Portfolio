@@ -2,6 +2,7 @@
 import Email from "@/components/Email";
 import { SocialIcons } from "@/components/SocialIcons";
 import "@/scss/index.scss";
+import Hero from "@/sections/Hero";
 import { Raleway, Fira_Code } from "next/font/google";
 
 const raleway = Raleway({ subsets: ["latin"] });
@@ -21,6 +22,7 @@ export default function Home() {
       `}</style>
       <SocialIcons />
       <Email />
+      <Hero />
     </>
   );
 }

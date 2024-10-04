@@ -35,7 +35,7 @@ const Navbar = () => {
             <div className="nav-button">
               <Button
                 text="Resume"
-                link="https://drive.google.com/file/d/1ggwmu9a0-GCEZlTdHlnoHsxyWscb_vPd/view"
+                link="https://drive.google.com/file/d/14PmEymDXJyaRvF5xhisMObiVcyv5DJqK/view"
               />
             </div>
           </div>
