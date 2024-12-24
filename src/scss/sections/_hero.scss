@@ -1,0 +1,43 @@
+.hero {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.2rem;
+  min-height: 55vh;
+  .hero-title {
+    color: var(--theme-color);
+    font-family: var(--fira-code);
+    font-size: var(--tsm2);
+    font-weight: normal;
+  }
+
+  .hero-title-large {
+    font-size: var(--tgiant);
+    color: var(--light-slate);
+    font-family: var(--raleway);
+  }
+
+  .hero-title-sub {
+    color: var(--lightest-slate);
+    font-size: 4.5rem;
+  }
+  .hero-text {
+    color: var(--slate);
+    width: 68%;
+    font-size: var(--tlarge);
+    line-height: 1.8rem;
+    font-weight: 400;
+    font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text",
+      -apple-system, system-ui, sans-serif;
+  }
+
+  .hero-button {
+    margin-top: 2rem;
+    .btn {
+      font-size: var(--tsm1);
+      padding: 1rem 2rem;
+    }
+  }
+}

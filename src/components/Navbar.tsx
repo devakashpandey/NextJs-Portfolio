@@ -32,12 +32,12 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-            <div className="nav-button">
+            {/* <div className="nav-button">
               <Button
                 text="Resume"
                 link="https://drive.google.com/file/d/14PmEymDXJyaRvF5xhisMObiVcyv5DJqK/view"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </nav>

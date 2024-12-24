@@ -2,6 +2,7 @@
 import Email from "@/components/Email";
 import { SocialIcons } from "@/components/SocialIcons";
 import "@/scss/index.scss";
+import About from "@/sections/About";
 import Hero from "@/sections/Hero";
 import { Raleway, Fira_Code } from "next/font/google";
 
@@ -13,7 +14,7 @@ const firacode = Fira_Code({
 
 export default function Home() {
   return (
-    <>
+    <div>
       <style jsx global>{`
         :root {
           --raleway: ${raleway.style.fontFamily};
@@ -22,7 +23,10 @@ export default function Home() {
       `}</style>
       <SocialIcons />
       <Email />
-      <Hero />
-    </>
+      <main>
+        <Hero />
+        <About />
+      </main>
+    </div>
   );
 }

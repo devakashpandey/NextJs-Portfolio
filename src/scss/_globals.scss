@@ -16,3 +16,11 @@ li {
 a {
   text-decoration: none;
 }
+
+.code-numbering {
+  color: var(--theme-color);
+  font-family: var(--fira-code);
+  font-size: var(--tlarge);
+  font-weight: 400;
+  margin-right: 5px;
+}
