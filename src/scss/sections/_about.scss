@@ -1,5 +1,6 @@
 .about {
-  margin: 15rem 0rem;
+  margin: 15rem auto;
+  width: 100%;
   .title {
     font-family: var(--raleway);
     color: var(--light-slate);
@@ -70,11 +71,10 @@
         width: 400px;
         margin-top: -3rem;
         img {
-          filter: grayscale(100%);
           transition: 0.3s ease-in-out;
 
           &:hover {
-            filter: grayscale(0%);
+            transform: translateY(-15px);
           }
         }
       }

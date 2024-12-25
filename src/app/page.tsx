@@ -3,6 +3,7 @@ import Email from "@/components/Email";
 import { SocialIcons } from "@/components/SocialIcons";
 import "@/scss/index.scss";
 import About from "@/sections/About";
+import Experience from "@/sections/Experience";
 import Hero from "@/sections/Hero";
 import { Raleway, Fira_Code } from "next/font/google";
 
@@ -26,6 +27,7 @@ export default function Home() {
       <main>
         <Hero />
         <About />
+        <Experience />
       </main>
     </div>
   );
