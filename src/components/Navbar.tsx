@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import Logo from "@/components/Logo";
-import Button from "./Button";
 
 const Navbar = () => {
   const menus = [
@@ -32,12 +31,6 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-            {/* <div className="nav-button">
-              <Button
-                text="Resume"
-                link="https://drive.google.com/file/d/14PmEymDXJyaRvF5xhisMObiVcyv5DJqK/view"
-              />
-            </div> */}
           </div>
         </div>
       </nav>

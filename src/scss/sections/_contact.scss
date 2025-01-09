@@ -1,0 +1,56 @@
+.contact {
+  margin: 15rem auto;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  .title {
+    font-family: var(--raleway);
+    position: relative;
+    color: var(--light-slate);
+    font-size: var(--txlarge);
+    h2 {
+      margin-bottom: 1rem;
+      font-weight: 700;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 22px;
+        width: 150px;
+        height: 2px;
+        margin-left: 310px;
+        background-color: var(--lightest-navy);
+      }
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 23px;
+        width: 150px;
+        height: 2px;
+        margin-left: -180px;
+        background-color: var(--lightest-navy);
+      }
+    }
+  }
+  .contact-text {
+    font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text",
+      -apple-system, system-ui, sans-serif;
+    font-size: var(--tlarge);
+    color: var(--slate);
+    text-align: center;
+    line-height: 1.7rem;
+  }
+
+  .contact-cta {
+    margin-top: 2rem;
+    .btn {
+      padding: 1.2rem 2rem;
+      font-family: var(--fira-code);
+      font-size: 0.9rem;
+    }
+  }
+}

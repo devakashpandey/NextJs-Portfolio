@@ -14,7 +14,7 @@ const Hero = () => {
         </h3>
 
         <p className="hero-text">
-          A passionate Front-end Developer with 1.5 years of expertise in
+          A passionate Front-end Developer with 2 years of expertise in
           developing user-friendly, adaptive and responsive websites with
           optimized cross-browser compatibility and runtime performance.{" "}
           <span style={{ color: "var(--light-slate)" }}>
@@ -24,7 +24,7 @@ const Hero = () => {
 
         <div className="hero-button">
           <Button
-            text="Check My Resume"
+            text="My Resume"
             link="https://drive.google.com/file/d/14PmEymDXJyaRvF5xhisMObiVcyv5DJqK/view"
           />
         </div>

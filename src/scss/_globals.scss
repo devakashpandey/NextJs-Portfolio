@@ -11,6 +11,11 @@ body {
 body {
   background: var(--background-color);
   font-family: var(--raleway);
+  position: relative;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 li {

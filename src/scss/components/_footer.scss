@@ -1,0 +1,35 @@
+.footer {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem auto;
+
+  .footer-text {
+    font-size: var(--tsm1);
+    color: var(--slate);
+    font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text",
+      -apple-system, system-ui, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .footer-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--lightest-slate);
+    .footer-icon-inner {
+      font-size: 1.2rem;
+      cursor: pointer;
+      &:hover {
+        color: var(--theme-color);
+      }
+    }
+  }
+}

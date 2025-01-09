@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 1.2rem;
+  gap: 1.1rem;
   min-height: 55vh;
   .hero-title {
     color: var(--theme-color);
@@ -21,7 +21,7 @@
 
   .hero-title-sub {
     color: var(--lightest-slate);
-    font-size: 4.5rem;
+    font-size: 4.2rem;
   }
   .hero-text {
     color: var(--slate);
@@ -34,10 +34,11 @@
   }
 
   .hero-button {
-    margin-top: 2rem;
+    margin-top: 3rem;
     .btn {
       font-size: var(--tsm1);
       padding: 1rem 2rem;
+      font-family: var(--fira-code);
     }
   }
 }

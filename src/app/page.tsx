@@ -3,6 +3,7 @@ import Email from "@/components/Email";
 import { SocialIcons } from "@/components/SocialIcons";
 import "@/scss/index.scss";
 import About from "@/sections/About";
+import Contact from "@/sections/Contact";
 import Experience from "@/sections/Experience";
 import Hero from "@/sections/Hero";
 import Projects from "@/sections/Projects";
@@ -30,6 +31,7 @@ export default function Home() {
         <About />
         <Experience />
         <Projects />
+        <Contact />
       </main>
     </div>
   );
