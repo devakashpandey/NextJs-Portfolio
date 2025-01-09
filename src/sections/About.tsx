@@ -19,7 +19,7 @@ const About = () => {
             <span style={{ color: "var(--theme-color)" }}>Akash Pandey</span>{" "}
             based in Delhi. I enjoy creating things that live on the internet.
             My interest in web development started back in{" "}
-            <span style={{ color: "var(--theme-color)" }}>2020</span>. I have
+            <span style={{ color: "var(--theme-color)" }}>2022</span>. I have
             completed my graduation in BCA from Bihar, then I joined Front-end
             development course of Unacademy & also studied it myself.
           </p>{" "}
@@ -31,15 +31,16 @@ const About = () => {
             Here are a few technologies I’ve been working with recently:
           </p>
           <ul className="about-info-list">
-            <li className="about-info-list-item">HTML</li>
-            <li className="about-info-list-item">CSS</li>
             <li className="about-info-list-item">JavaScript</li>
             <li className="about-info-list-item">React</li>
             <li className="about-info-list-item">Redux</li>
             <li className="about-info-list-item">Tailwind CSS</li>
-            <li className="about-info-list-item">SCSS</li>
+            <li className="about-info-list-item">SASS</li>
             <li className="about-info-list-item">Next.js</li>
-            <li className="about-info-list-item">TypeScript</li>
+            <li className="about-info-list-item">Github</li>
+            <li className="about-info-list-item">Typescript</li>
+            <li className="about-info-list-item">Framer Motion</li>
+            <li className="about-info-list-item">GSAP</li>
           </ul>
         </div>
 

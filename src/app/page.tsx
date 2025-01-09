@@ -5,6 +5,7 @@ import "@/scss/index.scss";
 import About from "@/sections/About";
 import Experience from "@/sections/Experience";
 import Hero from "@/sections/Hero";
+import Projects from "@/sections/Projects";
 import { Raleway, Fira_Code } from "next/font/google";
 
 const raleway = Raleway({ subsets: ["latin"] });
@@ -28,6 +29,7 @@ export default function Home() {
         <Hero />
         <About />
         <Experience />
+        <Projects />
       </main>
     </div>
   );
