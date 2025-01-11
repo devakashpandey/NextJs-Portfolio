@@ -24,7 +24,7 @@
   &-container {
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    gap: 5rem;
     .project {
       position: relative;
       display: flex;
@@ -158,7 +158,7 @@
       }
     }
   }
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1080px) {
     &-container {
       align-items: center;
       .project {
@@ -166,7 +166,7 @@
         .project-info {
           width: 600px;
           height: 300px;
-          background-color: rgba(31, 10, 44, 0.592);
+          background-color: #08111ea4;
           align-items: flex-start;
           padding: 1rem;
 
@@ -187,11 +187,13 @@
       }
     }
   }
-  @media screen and (max-width: 680px) {
-    margin: 5rem 0;
+  @media (max-width: 680px) {
+    margin: 9rem 0;
     &-container {
+      gap: 4rem;
       .project {
         &-image {
+          object-fit: contain;
           &-container {
             width: 500px;
             height: 300px;
@@ -204,10 +206,22 @@
       }
     }
   }
+
   @media screen and (max-width: 600px) {
+    .title {
+      h2 {
+        &::after {
+          display: none;
+        }
+      }
+    }
     &-container {
       .project {
         &-image {
+          img {
+            object-fit: cover;
+            opacity: 0.4;
+          }
           &-container {
             width: 350px;
             height: 400px;
@@ -221,19 +235,41 @@
     }
   }
   @media screen and (max-width: 968px) {
+    margin: 10rem 0;
     .title {
       h2 {
         &::after {
-          width: 100px;
+          width: 180px;
         }
       }
     }
   }
-  @media screen and (max-width: 600px) {
-    .title {
-      h2 {
-        &::after {
-          display: none;
+
+  @media (max-width: 350px) {
+    &-container {
+      .project {
+        &-info {
+          &-tech-list {
+            gap: 10px;
+            width: 100%;
+          }
+        }
+      }
+
+      .project {
+        &-image {
+          img {
+            object-fit: cover;
+            opacity: 0.4;
+          }
+          &-container {
+            width: 280px;
+            height: 450px;
+          }
+        }
+        .project-info {
+          width: 280px;
+          height: 450px;
         }
       }
     }

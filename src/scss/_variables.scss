@@ -18,9 +18,14 @@
   --tlarge2: 22px;
   --txlarge: 25px;
   --tx2large: 32px;
-  --tgiant: clamp(35px, 7.5vw, 75px);
+  --tgiant: clamp(45px, 7.5vw, 75px);
 
   @media screen and (max-width: 480px) {
+    --tx2large: 30px;
+  }
+
+  @media screen and (max-width: 350px) {
+    --tgiant: clamp(38px, 7.5vw, 75px);
     --tx2large: 25px;
   }
 }

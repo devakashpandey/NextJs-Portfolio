@@ -30,11 +30,11 @@
     .about-info {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      gap: 1.2rem;
       .about-info-text {
         color: var(--slate);
         margin-right: 11%;
-        line-height: 1.5rem;
+        line-height: 1.7rem;
         letter-spacing: 0.05rem;
         font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text",
           -apple-system, system-ui, sans-serif;
@@ -42,6 +42,7 @@
       .about-info-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 0 1rem;
         padding: 0 1rem;
         .about-info-list-item {
           line-height: 1.6rem;
@@ -68,8 +69,8 @@
       height: max-content;
       .about-grid-photo-container {
         position: relative;
-        height: 400px;
-        width: 400px;
+        height: 450px;
+        width: 450px;
         margin-top: -3rem;
         img {
           transition: 0.3s ease-in-out;
@@ -77,6 +78,77 @@
           &:hover {
             transform: translateY(-15px);
           }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1080px) {
+    margin: 5rem 0;
+    .title {
+      h2 {
+        &::after {
+          width: 200px;
+        }
+      }
+    }
+    .about-grid {
+      .about-grid-photo {
+        .about-grid-photo-container {
+          height: 223px;
+          width: 223px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    margin: 9rem auto;
+    .title {
+      h2 {
+        &::after {
+          width: 200px;
+        }
+      }
+    }
+    .about-grid {
+      .about-grid-photo {
+        margin-top: 3rem;
+
+        .about-grid-photo-container {
+          height: 350px;
+          width: 350px;
+        }
+      }
+      .about-info {
+        .about-info-text {
+          margin-right: 0;
+        }
+      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .title {
+      h2 {
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    .about-grid {
+      .about-info {
+        .about-info-list {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      .about-grid-photo {
+        .about-grid-photo-container {
+          height: 223px;
+          width: 223px;
         }
       }
     }

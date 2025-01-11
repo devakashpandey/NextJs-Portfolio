@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 1.1rem;
+  gap: 1.2rem;
   min-height: 55vh;
   .hero-title {
     color: var(--theme-color);
@@ -34,11 +34,47 @@
   }
 
   .hero-button {
-    margin-top: 3rem;
+    margin-top: 2rem;
     .btn {
       font-size: var(--tsm1);
       padding: 1rem 2rem;
       font-family: var(--fira-code);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-text {
+      width: 95%;
+    }
+
+    .hero-title-sub {
+      color: var(--lightest-slate);
+      font-size: 3.4rem;
+      margin-top: -5px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .hero-text {
+      width: 100%;
+    }
+
+    .hero-title-sub {
+      color: var(--lightest-slate);
+      font-size: 2rem;
+      margin-top: -5px;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .hero-text {
+      width: 100%;
+    }
+
+    .hero-title-sub {
+      color: var(--lightest-slate);
+      font-size: 2rem;
+      margin-top: -5px;
     }
   }
 }

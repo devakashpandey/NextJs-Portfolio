@@ -28,7 +28,7 @@
         content: "";
         display: block;
         position: absolute;
-        top: 23px;
+        top: 26px;
         width: 150px;
         height: 2px;
         margin-left: -180px;
@@ -51,6 +51,37 @@
       padding: 1.2rem 2rem;
       font-family: var(--fira-code);
       font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin: 8rem auto;
+
+    .title {
+      h2 {
+        &::after {
+          width: 100px;
+        }
+        &::before {
+          top: 25px;
+          width: 100px;
+          margin-left: -120px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .title {
+      font-size: var(--tlarge);
+      h2 {
+        &::after {
+          display: none;
+        }
+        &::before {
+          display: none;
+        }
+      }
     }
   }
 }

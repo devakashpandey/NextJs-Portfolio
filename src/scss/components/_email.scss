@@ -24,4 +24,8 @@
     background: var(--lightest-slate);
     margin: 0 auto;
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
