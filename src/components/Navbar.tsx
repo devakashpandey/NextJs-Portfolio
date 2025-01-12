@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Logo from "./Logo";
 import { MdOutlineMenu } from "react-icons/md";
 import { IoClose } from "react-icons/io5";
 import { motion } from "framer-motion";
+import Logo from "./Logo";
 
 const Navbar = () => {
   const [navVisible, setNavVisible] = useState(false);
