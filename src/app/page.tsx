@@ -1,5 +1,8 @@
 "use client";
 import Email from "@/components/Email";
+import Footer from "@/components/Footer";
+import Loader from "@/components/Loader";
+import Navbar from "@/components/Navbar";
 import { SocialIcons } from "@/components/SocialIcons";
 import "@/scss/index.scss";
 import About from "@/sections/About";
@@ -8,6 +11,8 @@ import Experience from "@/sections/Experience";
 import Hero from "@/sections/Hero";
 import Projects from "@/sections/Projects";
 import { Raleway, Fira_Code } from "next/font/google";
+import Head from "next/head";
+import { useState } from "react";
 
 const raleway = Raleway({ subsets: ["latin"] });
 const firacode = Fira_Code({
@@ -16,23 +21,43 @@ const firacode = Fira_Code({
 });
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+  const [showContent, setShowContent] = useState(false);
+
+  const handleLoader = () => {
+    setIsLoading(false);
+    setTimeout(() => setShowContent(true), 450);
+  };
+
   return (
     <div>
+      {/* <Head>
+        <title>Akash Pandey</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+      </Head> */}
       <style jsx global>{`
         :root {
           --raleway: ${raleway.style.fontFamily};
           --fira-code: ${firacode.style.fontFamily};
         }
       `}</style>
-      <SocialIcons />
-      <Email />
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Contact />
-      </main>
+
+      {showContent && (
+        <>
+          <Navbar />
+          <SocialIcons />
+          <Email />
+          <main>
+            <Hero />
+            <About />
+            <Experience />
+            <Projects />
+            <Contact />
+          </main>
+          <Footer />
+        </>
+      )}
+      <Loader isLoading={isLoading} setIsLoading={handleLoader} />
     </div>
   );
 }

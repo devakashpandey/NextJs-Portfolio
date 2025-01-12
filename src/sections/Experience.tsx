@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 const Experience = () => {
   const [selected, setSelected] = useState(0);
@@ -44,7 +45,18 @@ const Experience = () => {
 
   return (
     <>
-      <div className="experience" id="experience">
+      <motion.div
+        className="experience"
+        id="experience"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.7 }}
+        variants={{
+          visible: { opacity: 1, y: -80 },
+          hidden: { opacity: 0, y: 0 },
+        }}
+      >
         <div className="title">
           <h2>
             <span className="code-numbering">02.</span>My Experience
@@ -93,7 +105,7 @@ const Experience = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

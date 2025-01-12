@@ -1,5 +1,3 @@
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -14,11 +12,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
+      {/* <Head>
+        <title>Akash Pandey</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+      </Head> */}
+      <body>{children}</body>
     </html>
   );
 }

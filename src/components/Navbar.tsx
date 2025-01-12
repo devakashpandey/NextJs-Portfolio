@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import Logo from "@/components/Logo";
 import { MdOutlineMenu } from "react-icons/md";
 import { IoClose } from "react-icons/io5";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [navVisible, setNavVisible] = useState(false);
@@ -53,12 +54,22 @@ const Navbar = () => {
     <>
       <nav>
         <div className={`wrapper ${responsiveNav ? "blur-nav" : ""}`}>
-          <div className="logo">
+          <motion.div
+            className="logo"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+          >
             <Link href="https://iamakashpandey.netlify.app" target="_akash">
               <Logo />
             </Link>
-          </div>{" "}
-          <div className="responsive-nav-toggle">
+          </motion.div>{" "}
+          <motion.div
+            className="responsive-nav-toggle"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+          >
             {responsiveNav ? (
               <IoClose
                 onClick={(e) => {
@@ -75,15 +86,25 @@ const Navbar = () => {
               />
             )}
              
-          </div>
+          </motion.div>
           <div className={`${responsiveNav && "nav-responsive"} nav-items`}>
             <ul className="nav-item-ul">
-              {menus.map(({ name, link }) => (
-                <li key={name} className="nav-item-list">
+              {menus.map(({ name, link }, index) => (
+                <motion.li
+                  key={name}
+                  className="nav-item-list"
+                  initial={{ opacity: 0, y: -25 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 0.3,
+                    ease: "easeInOut",
+                    delay: 0.3 + index * 0.1,
+                  }}
+                >
                   <Link href={link} className="nav-item-list-link">
                     {name}
                   </Link>
-                </li>
+                </motion.li>
               ))}
             </ul>
           </div>

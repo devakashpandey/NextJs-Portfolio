@@ -1,10 +1,22 @@
 import Image from "next/image";
 import React from "react";
 import myPic from "../../public/my.png";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="about" id="about">
+    <motion.div
+      className="about"
+      id="about"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      variants={{
+        visible: { opacity: 1, y: -50 },
+        hidden: { opacity: 0, y: 0 },
+      }}
+    >
       <div className="title">
         {" "}
         <h2>
@@ -50,7 +62,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

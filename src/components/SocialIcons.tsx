@@ -7,6 +7,7 @@ import {
   FiTwitter,
   FiYoutube,
 } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 export const SocialIcons = () => {
   const SocialLinks = [
@@ -39,7 +40,12 @@ export const SocialIcons = () => {
   ];
   return (
     <>
-      <div className="social-icons">
+      <motion.div
+        className="social-icons"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.3, ease: "easeInOut", delay: 1.85 }}
+      >
         <ul>
           {SocialLinks.map(({ name, icon, link }) => (
             <li key={name} title={name} className="social-icons-item">
@@ -53,7 +59,7 @@ export const SocialIcons = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </motion.div>
     </>
   );
 };

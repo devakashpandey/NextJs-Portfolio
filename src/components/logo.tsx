@@ -1,5 +1,4 @@
 import React from "react";
-import { TbLetterASmall } from "react-icons/tb";
 
 function Logo() {
   return (
@@ -15,9 +14,6 @@ function Logo() {
               width="800px"
               height="800px"
             />
-            {/* <text x="50" y="50" font-family="Arial" font-size="40" fill="#000">
-              A
-            </text> */}
           </svg>
         </g>
         <path

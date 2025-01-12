@@ -1,0 +1,25 @@
+#logo {
+  color: var(--theme-color);
+  height: 100%;
+  width: 100%;
+  transition: all 0.25s ease-in-out;
+}
+
+#logo:hover {
+  transform: scale(1.06);
+}
+
+.loader {
+  color: var(--theme-color);
+  fill: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+  background: #020d1b;
+  svg {
+    height: 6.5rem !important;
+    width: 6.5rem !important;
+  }
+}
