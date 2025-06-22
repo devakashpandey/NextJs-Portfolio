@@ -7,9 +7,9 @@ import { motion } from "framer-motion";
 function Projects() {
   const projectsData = [
     {
-      image: "/t-movies.png",
-      projectName: "T-Movies",
-      projectLink: "https://t-movies-react.netlify.app/",
+      image: "/movionix.png",
+      projectName: "Movionix",
+      projectLink: "https://movionix.netlify.app/",
       projectDescription:
         "A TV Shows & Movies web app where you see the all Trending, Popular, Top Rated TV shows & Movies. See full information like Rating, Details, Actor, Trailer with Skeleton loading & Lazy load image and also filter with Category & Sorting.",
       projectTech: ["React", "Redux", "SASS", "Material UI", "Axios"],
@@ -24,7 +24,7 @@ function Projects() {
       projectLink: "https://live-crypto-currency-tracker.netlify.app/",
       projectDescription:
         "A Crypto Currency Tracker in which you can see the market price, 24hr change of top 100 Bitcoins with graph & also have Sign up and Sign in functionality.You can also add to cart the Bitcoin after Log in.",
-      projectTech: ["React", "Context API", "Material UI", "Firebase"],
+      projectTech: ["React", "Context API", "Firebase"],
       projectExternalLinks: {
         github:
           "https://github.com/devakashpandey/CryptoCurrency-Tracker-Project",
@@ -54,7 +54,7 @@ function Projects() {
       projectName: "Portfolio",
       projectLink: "https://iamakashpandey.netlify.app",
       projectDescription:
-        "A Amazon Clone in which we can add products to cart & delete from cart using Redux Toolkit & save the data in Local storage using Redux-Persist. Sign up & Sign in functionality is also here.",
+        "This portfolio is built using React JS and includes features like dark/light mode using the Context API and a fully responsive design that works seamlessly across all screen sizes.",
       projectTech: ["React", "Context API", "AOS", "Material UI"],
       projectExternalLinks: {
         github: "https://github.com/devakashpandey/My_Portfolio",

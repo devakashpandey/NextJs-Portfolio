@@ -16,16 +16,27 @@ const Experience = () => {
 
   const expereinces = [
     {
+      name: "Fictive Box",
+      role: "Front-End Developer",
+      url: "",
+      start: "Feb 2025",
+      end: "Present",
+      shortDescription: [
+        "Designed and developed a reusable component library for future use, resulting in a 30 percent reduction in development time for new projects.",
+        "Additionally, I've represented the company in client meetings, communicating effectively on their behalf.",
+      ],
+    },
+    {
       name: "SD Campus",
       role: "Front-End Developer",
       url: "https://www.sdcampus.com/",
       start: "Nov 2023",
-      end: "Present",
+      end: "Feb 2025",
       shortDescription: [
         "I work on two projects “SD CAMPUS” a learning platform and a “SD STORE” an E-commerce book store website.",
-        "Designed and developed a reusable component library for future use, resulting in a 30 percent reduction in development time for new projects.",
-        "I've also managed a small team that includes Frontend Developers, Backend Developers, and UI/UX Developers.",
+        "Designed and developed a reusable component library for future use, resulting in a 20 percent reduction in development time for new projects.",
         "Collaborated with teams to ensure both projects met user requirements and business goals, delivering high-quality web solutions that drove engagement and sales.",
+        "Optimized components for maximum performance across a vast array of web-capable devices and browsers.",
       ],
     },
     {
@@ -36,8 +47,7 @@ const Experience = () => {
       end: "Oct 2023",
       shortDescription: [
         "Developed and designed responsive web pages for “FlexiBench” and “Roadvison” projects ensuring a clean, user-friendly interface using Angular & React.js.",
-        "Implemented smooth, user-centric UI/UX design for both projects",
-        "Enhancing user engagement and optimizing task-based training and flexible hiring options in FlexiBench",
+        "Implemented smooth, user-centric UI/UX design for both projects.",
         "Additionally, I've represented the company in client meetings, communicating effectively on their behalf.",
       ],
     },

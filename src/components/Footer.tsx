@@ -10,7 +10,7 @@ const Footer = () => {
     <>
       <div className="footer">
         <div className="footer-text">
-          <p>Developed By Akash Pandey </p>
+          <p className="theme-color">Developed By Akash Pandey </p>
           <p>Copyright © {currentYear} Akash Pandey. All Rights Reserved.</p>
         </div>
         <div className="footer-icon">

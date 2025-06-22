@@ -55,7 +55,8 @@
         display: flex;
         vertical-align: middle;
         cursor: pointer;
-        width: 100%;
+        width: 9rem;
+        margin-left: 10px;
         transition: 0.2s ease-in-out;
         span {
           display: flex;
@@ -154,15 +155,16 @@
         }
       }
     }
-  }
 
-  @media screen and (max-width: 350px) {
-    margin: 19rem 0;
     .container {
       .exp-slider {
         .exp-slider-item {
-          padding: 0rem;
+          padding: 0rem 5px;
+          border-radius: 5px;
           justify-content: center;
+          span {
+            font-size: 12px;
+          }
         }
       }
     }
