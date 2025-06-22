@@ -31,10 +31,6 @@ export default function Home() {
 
   return (
     <div>
-      {/* <Head>
-        <title>Akash Pandey</title>
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
-      </Head> */}
       <style jsx global>{`
         :root {
           --raleway: ${raleway.style.fontFamily};
