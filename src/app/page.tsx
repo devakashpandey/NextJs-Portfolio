@@ -11,7 +11,6 @@ import Experience from "@/sections/Experience";
 import Hero from "@/sections/Hero";
 import Projects from "@/sections/Projects";
 import { Raleway, Fira_Code } from "next/font/google";
-import Head from "next/head";
 import { useState } from "react";
 
 const raleway = Raleway({ subsets: ["latin"] });
