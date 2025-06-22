@@ -27,7 +27,7 @@ const About = () => {
       <div className="about-grid">
         <div className="about-info">
           <p className="about-info-text">
-            Hello! I'm{" "}
+            Hello! I&apos;m{" "}
             <span style={{ color: "var(--theme-color)" }}>Akash Pandey</span>, a
             passionate Front-end Developer based in Delhi with over 2 years of
             hands-on experience. I specialize in building responsive,
@@ -45,7 +45,7 @@ const About = () => {
             React, Next js, TypeScript, & Tailwind CSS.
           </p>
           <p className="about-info-text">
-            Here are a few technologies I’ve been working with recently:
+            Here are a few technologies I&apos;ve been working with recently:
           </p>
           <ul className="about-info-list">
             <li className="about-info-list-item">JavaScript</li>
