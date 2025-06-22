@@ -59,9 +59,6 @@ const About = () => {
             <li className="about-info-list-item">Typescript</li>
             <li className="about-info-list-item">Framer Motion</li>
             <li className="about-info-list-item">React Three Fiber</li>
-            <li className="about-info-list-item">GSAP</li>
-            <li className="about-info-list-item">Shadcn</li>
-            <li className="about-info-list-item">Zustand</li>
           </ul>
         </div>
 
