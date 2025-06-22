@@ -24,7 +24,7 @@ const Contact = () => {
           transition={{ duration: 0.3, ease: "easeInOut", delay: 0.7 }}
         >
           <h2>
-            <span className="code-numbering">04.</span>Let's Connect
+            <span className="code-numbering">04.</span>Let&rsquo;s Connect
           </h2>
         </motion.div>
         <motion.div
