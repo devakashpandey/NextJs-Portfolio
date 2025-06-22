@@ -33,9 +33,10 @@ const Contact = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, ease: "easeInOut", delay: 0.9 }}
         >
-          I’m currently open to work and actively seeking new opportunities. If
-          you’re hiring or have a collaboration idea, feel free to reach out.
-          I’m always available and happy to connect!
+          I&rsquo;m currently open to work and actively seeking new
+          opportunities. If you&rsquo;re hiring or have a collaboration idea,
+          feel free to reach out. I&rsquo;m always available and happy to
+          connect!
         </motion.div>
 
         <motion.div

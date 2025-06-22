@@ -41,7 +41,7 @@ const Hero = () => {
           developing user-friendly, adaptive and responsive websites with
           optimized cross-browser compatibility and runtime performance.{" "}
           <span style={{ color: "var(--light-slate)" }}>
-            "I believe web design can be more diverse & inspiring."
+            &quot;I believe web design can be more diverse & inspiring.&quot;
           </span>{" "}
         </motion.p>
 
